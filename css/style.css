@@ -163,6 +163,15 @@ address {
   background: var(--first-background-color);
   padding: 200px 0;
 }
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/Img-hero.jpg);
+}
 .title-first-home {
   font-weight: 900;
   font-size: 44px;
@@ -205,6 +214,28 @@ address {
 }
 .about-peculiarities {
   width: 270px;
+}
+.about-peculiarities::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--second-background-color);
+  margin-bottom: 30px;
+}
+.icon-vector::before {
+  background-image: url(../img/Vector.svg);
+}
+.icon-clock::before {
+  background-image: url(../img/Clock.svg);
+}
+.icon-laptop::before {
+  background-image: url(../img/laptop.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
 }
 .peculiarities-title {
   font-weight: 700;
