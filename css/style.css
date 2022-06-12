@@ -219,20 +219,20 @@ address {
   display: block;
   content: '';
   height: 120px;
-  background-size: contain;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--second-background-color);
   margin-bottom: 30px;
 }
 .icon-vector::before {
-  background-image: url(../img/Vector.svg);
+  background-image: url(../img/antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../img/Clock.svg);
+  background-image: url(../img/clock.svg);
 }
 .icon-laptop::before {
-  background-image: url(../img/laptop.svg);
+  background-image: url(../img/diagram.svg);
 }
 .icon-astronaut::before {
   background-image: url(../img/astronaut.svg);
@@ -303,10 +303,40 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 16px;
 }
 .tiem-master {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.masters-soc-item:first-child {
+  margin-left: 0;
+}
+.masters-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.masters-soc-icon {
+  fill: currentColor;
+}
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 /*---------------MAIN PORTFOLIO__________________*/
 .main-section {
