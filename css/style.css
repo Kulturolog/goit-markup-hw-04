@@ -121,9 +121,15 @@ address {
 .mail-home:focus {
   color: var(--brand-color);
 }
+.mail-icon {
+  fill: var(--text-color);
+}
 .tel-home:hover,
 .tel-home:focus {
   color: var(--brand-color);
+}
+.tel-icon {
+  fill: var(--text-color);
 }
 .mail-portfolio:hover,
 .mail-portfolio:focus {
@@ -337,6 +343,32 @@ address {
 .masters-soc-link:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  margin-left: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-item:first-child {
+  margin-left: 0;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: white;
 }
 /*---------------MAIN PORTFOLIO__________________*/
 .main-section {
