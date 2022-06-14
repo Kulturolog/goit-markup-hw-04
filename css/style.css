@@ -95,6 +95,9 @@ address {
 .tel-home,
 .mail-portfolio,
 .tel-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
@@ -121,15 +124,14 @@ address {
 .mail-home:focus {
   color: var(--brand-color);
 }
-.mail-icon {
-  fill: var(--text-color);
+.mail-icon,
+.tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .tel-home:hover,
 .tel-home:focus {
   color: var(--brand-color);
-}
-.tel-icon {
-  fill: var(--text-color);
 }
 .mail-portfolio:hover,
 .mail-portfolio:focus {
@@ -269,6 +271,8 @@ address {
   background-color: var(--layout-background-color);
   border-radius: 0px 0px 4px 4px;
   max-width: 370px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .tiem {
   background-color: var(--second-background-color);
@@ -393,6 +397,8 @@ address {
 .btn-portfolio:focus {
   color: var(--layout-background-color);
   background-color: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-list {
   display: flex;
@@ -410,6 +416,10 @@ address {
 .gallery-item {
   width: calc(100% / 3 - 30px);
   margin: 15px;
+}
+.gallery-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-list {
   padding-top: 20px;
